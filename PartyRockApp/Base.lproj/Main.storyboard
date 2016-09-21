@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgP-bq-whV">
@@ -80,10 +80,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="OdV-5g-GBe">
-                                        <frame key="frameInset" minY="28" width="320" height="84"/>
+                                        <frame key="frameInset" minY="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdV-5g-GBe" id="nfZ-S6-UWN">
-                                            <frame key="frameInset" width="320" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-Fk-VoR">
@@ -92,7 +92,7 @@
                                                         <constraint firstAttribute="width" constant="76" id="l01-Sp-Ijs"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I belive I can fly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2H-Si-e0u">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I belive I can fly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2H-Si-e0u">
                                                     <fontDescription key="fontDescription" name="Rocks__G" family="Rocks__G" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="v2H-Si-e0u" firstAttribute="centerY" secondItem="nfZ-S6-UWN" secondAttribute="centerY" id="E7F-F0-Gf3"/>
-                                                <constraint firstItem="v2H-Si-e0u" firstAttribute="leading" secondItem="0JN-Fk-VoR" secondAttribute="trailing" constant="4" id="GcD-3F-7Ll"/>
+                                                <constraint firstItem="v2H-Si-e0u" firstAttribute="leading" secondItem="0JN-Fk-VoR" secondAttribute="trailing" constant="20" id="GcD-3F-7Ll"/>
                                                 <constraint firstItem="0JN-Fk-VoR" firstAttribute="centerY" secondItem="nfZ-S6-UWN" secondAttribute="centerY" id="HlR-fV-Rw7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="v2H-Si-e0u" secondAttribute="trailing" constant="4" id="bxY-2f-8aq"/>
                                                 <constraint firstItem="0JN-Fk-VoR" firstAttribute="leading" secondItem="nfZ-S6-UWN" secondAttribute="leading" constant="4" id="kMD-kk-XT3"/>
@@ -141,7 +141,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ll0-2F-pxy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oqk-8c-twb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-7w-jcA">
