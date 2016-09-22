@@ -10,6 +10,10 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var partyRocks = [partyRock]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        

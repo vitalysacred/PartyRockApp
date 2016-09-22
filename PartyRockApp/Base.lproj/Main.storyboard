@@ -79,7 +79,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pgy-dm-rfy">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="OdV-5g-GBe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="OdV-5g-GBe" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <frame key="frameInset" minY="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdV-5g-GBe" id="nfZ-S6-UWN">
@@ -106,6 +106,10 @@
                                                 <constraint firstItem="0JN-Fk-VoR" firstAttribute="leading" secondItem="nfZ-S6-UWN" secondAttribute="leading" constant="4" id="kMD-kk-XT3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="0JN-Fk-VoR" id="46E-am-1zd"/>
+                                            <outlet property="videoTitle" destination="v2H-Si-e0u" id="7TN-3m-jne"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
