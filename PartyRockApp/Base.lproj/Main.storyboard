@@ -79,7 +79,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pgy-dm-rfy">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="84" id="OdV-5g-GBe" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="OdV-5g-GBe">
                                         <frame key="frameInset" minY="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdV-5g-GBe" id="nfZ-S6-UWN">
@@ -106,10 +106,6 @@
                                                 <constraint firstItem="0JN-Fk-VoR" firstAttribute="leading" secondItem="nfZ-S6-UWN" secondAttribute="leading" constant="4" id="kMD-kk-XT3"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="videoImagePreview" destination="0JN-Fk-VoR" id="rCx-fx-sIp"/>
-                                            <outlet property="videoTitle" destination="v2H-Si-e0u" id="V6f-7k-cY9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -129,7 +125,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Pgy-dm-rfy" id="C5S-Ce-Bkw"/>
                         <segue destination="3BI-hc-kXC" kind="showDetail" identifier="VideoVC" id="kEt-cv-0u8"/>
                     </connections>
                 </viewController>
@@ -149,24 +144,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-7w-jcA">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-7w-jcA">
+                                <frame key="frameInset" width="320" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="gVj-Ok-YFh"/>
-                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="pc1-7w-jcA" firstAttribute="top" secondItem="oqk-8c-twb" secondAttribute="top" id="68P-JQ-wbc"/>
-                            <constraint firstAttribute="trailing" secondItem="pc1-7w-jcA" secondAttribute="trailing" id="RAI-vC-iCP"/>
-                            <constraint firstItem="pc1-7w-jcA" firstAttribute="leading" secondItem="oqk-8c-twb" secondAttribute="leading" id="nfo-pw-9TI"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abx-NC-tfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.79999999999995" y="37.331334332833585"/>
+            <point key="canvasLocation" x="785.625" y="38.028169014084504"/>
         </scene>
     </scenes>
     <resources>
