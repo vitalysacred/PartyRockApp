@@ -8,7 +8,7 @@
 
 import Foundation
 
-class partyRock {
+class PartyRock {
     private var _imageURL: String!
     private var _videoURL: String!
     private var _videoTitle: String!

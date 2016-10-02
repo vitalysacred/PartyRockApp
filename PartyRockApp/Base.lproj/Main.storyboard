@@ -149,18 +149,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-7w-jcA">
-                                <frame key="frameInset" width="320" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-7w-jcA">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="uxP-0Q-jp9"/>
+                                </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnh-vd-eVh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QvQ-vN-blv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rocks__G" family="Rocks__G" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pc1-7w-jcA" secondAttribute="trailing" id="PaA-gR-GRx"/>
+                            <constraint firstItem="Fnh-vd-eVh" firstAttribute="leading" secondItem="oqk-8c-twb" secondAttribute="leadingMargin" constant="5" id="a8h-mG-X0e"/>
+                            <constraint firstItem="pc1-7w-jcA" firstAttribute="top" secondItem="oqk-8c-twb" secondAttribute="top" id="akX-i6-cvU"/>
+                            <constraint firstItem="pc1-7w-jcA" firstAttribute="leading" secondItem="oqk-8c-twb" secondAttribute="leading" id="oGj-Og-jul"/>
+                            <constraint firstItem="Fnh-vd-eVh" firstAttribute="top" secondItem="pc1-7w-jcA" secondAttribute="bottom" constant="60" id="p5M-Bp-kYf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fnh-vd-eVh" secondAttribute="trailing" constant="5" id="vy3-Xt-A3b"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="Fnh-vd-eVh" id="1nl-e6-mpE"/>
+                        <outlet property="webView" destination="pc1-7w-jcA" id="0qh-g6-gdd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abx-NC-tfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785.625" y="38.028169014084504"/>
+            <point key="canvasLocation" x="784.79999999999995" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
