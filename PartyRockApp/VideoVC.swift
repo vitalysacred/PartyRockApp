@@ -14,7 +14,7 @@ class VideoVC: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     
     
-    private var _partyRock: PartyRock!
+    private var _partyRock: PartyRock! /* неопределенный тип данных, тут была ошибка */
     
     var partyRock: PartyRock {
         get {
